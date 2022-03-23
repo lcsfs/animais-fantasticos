@@ -13,10 +13,11 @@
   </script>
 </head>
 
-<div class="grid-container">
-  <body>
+<body>
+  <div class="grid-container">
     <nav class="menu js-menu">
-      <ul>
+      <button data-menu='button' id='menu' aria-expanded='false' aria-controls='menu'>Menu</button>
+      <ul data-menu='list'>
         <li><a href="#animais">Animais</a></li>
         <li data-dropdown>
           <a href="sobre.html">Sobre</a>
@@ -149,6 +150,28 @@
       </dl>
     </section>
 
+    <section class='grid-section numero js-scroll' data-anima="js-scroll">
+      <h1 class='titulo'>Números</h1>
+      <div class="numeros-grid">
+        <div class="numero-animal">
+          <h3>Lobos</h3>
+          <span data-numero>2314</span>
+        </div>
+        <div class="numero-animal">
+          <h3>Raposas</h3>
+          <span data-numero>4764</span>
+        </div>
+        <div class="numero-animal">
+          <h3>Esquilos</h3>
+          <span data-numero>5424</span>
+        </div>
+        <div class="numero-animal">
+          <h3>Ursos</h3>
+          <span data-numero>244</span>
+        </div>
+      </div>
+    </section>
+
     <section class="grid-section contato js-scroll" id="contato">
       <h1 class="titulo">Contato</h1>
       <div class="mapa" data-tooltip aria-label="endereço próximo">
@@ -159,13 +182,14 @@
         <li>+55 (11) 9999-9999</li>
         <li>Rua do Conde, nº 21</li>
         <li>Rio de Janeiro - RJ</li>
+        <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8 às 18</li>
       </ul>
     </section>
 
     <footer class="copy">
       <p>Todos os direitos reservados.</p>
     </footer>
-</div>
+  </div>
 
 <section class="modal-container" data-modal="container">
   <div class="modal">
